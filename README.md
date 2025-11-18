@@ -1,2 +1,3 @@
 # project-django-notes-app
-# Automate the django-notes-app using kubernetes
+
+### Automating the django-notes-app using kubernetes
