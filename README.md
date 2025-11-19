@@ -1,6 +1,8 @@
 # Django Notes App
 This is a notes app built with React and Django.
 
+<img width="400" height="400" alt="image" src="https://github.com/user-attachments/assets/29af75b8-3d89-4a12-942b-37fbcc2d81d6" />
+
 ## Requirements
 1. Python 3.9
 2. Node.js
@@ -32,16 +34,17 @@ docker stop notes-app-container && docker remove notes-app-container
 ```
 
 5. Push the Image to DockerHub	
-	5.1.	Login to DockerHub	
-	5.2. 	Generate Token in Account Settings	
-	5.3.	Use Docker CLI command for login to Docker CLI client.	
-		```
-		docker image tag notes-app:latest akshatpareek9/notes-app:latest
-		
-		docker images
 
-		docker push akshatpareek9/notes-app:latest
-		```
+ - Login to DockerHub
+ - Generate Token in Account Settings
+ - Use Docker CLI command for login to Docker CLI client.
+   ```
+   docker image tag notes-app:latest akshatpareek9/notes-app:latest
+
+   docker images
+
+   docker push akshatpareek9/notes-app:latest
+   ```
 
 ## Nginx
 
