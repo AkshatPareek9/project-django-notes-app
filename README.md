@@ -46,6 +46,22 @@ docker stop notes-app-container && docker remove notes-app-container
    docker push akshatpareek9/notes-app:latest
    ```
 
+6. Automate the deployment using Kubernetes cluster
+```
+mkdir k8s
+cd k8s
+
+vim namespace.yaml
+vim deployment.yaml
+vim service.yaml
+
+kubectl apply -f namespace.yaml
+kubectl apply -f deployment.yaml
+kubectl apply -f service.yaml
+
+sudo -E kubectl port-forward service/notes-app-service -n notes-app-namespace 80:8000 --address=0.0.0.0
+```
+
 ## Nginx
 
 Install Nginx reverse proxy to make this application available
