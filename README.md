@@ -31,10 +31,10 @@ docker run -d --name notes-app-container -p 8000:8000 notes-app:latest
 docker stop notes-app-container && docker remove notes-app-container
 ```
 
-5. Push the Image to DockerHub
-	5.1.	Login to DockerHub
-	5.2. 	Generate Token in Account Settings
-	5.3.	Use Docker CLI command for login to Docker CLI client.
+5. Push the Image to DockerHub	
+	5.1.	Login to DockerHub	
+	5.2. 	Generate Token in Account Settings	
+	5.3.	Use Docker CLI command for login to Docker CLI client.	
 		```
 		docker image tag notes-app:latest akshatpareek9/notes-app:latest
 		
@@ -47,5 +47,5 @@ docker stop notes-app-container && docker remove notes-app-container
 
 Install Nginx reverse proxy to make this application available
 
-`sudo apt-get update`
+`sudo apt-get update`	
 `sudo apt install nginx`
