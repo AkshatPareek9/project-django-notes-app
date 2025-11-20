@@ -2,7 +2,7 @@
 
 pipeline {
     agent { label "akshat" }
-    
+
     stages {
         stage('Code'){
             steps {
